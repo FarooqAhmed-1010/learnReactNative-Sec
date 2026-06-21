@@ -1,5 +1,5 @@
-import Register from './src/screens/register/Register';
+import MaiNavigation from './src/navigation/MainNavigator';
 
 export default function App() {
-  return <Register />;
+  return <MaiNavigation />;
 }

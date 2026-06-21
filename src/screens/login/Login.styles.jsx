@@ -1,6 +1,11 @@
 import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
+
+  scrollcontainer: {
+    flex: 1,
+  },
+
   container: {
     flex: 1,
     backgroundColor: '#1a1f36',
@@ -22,4 +27,9 @@ export const styles = StyleSheet.create({
     padding: 15,
     marginBottom: 15,
   },
+    Button: {
+    backgroundColor: 'rgb(49, 239, 214)',
+    marginTop: 20,
+    
+  }, 
 });
