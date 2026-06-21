@@ -11,7 +11,7 @@ import people from "./data"
         .catch((err)=>console.log(err))
         const _renderItem = ({ item }) => (
             <View style={styles.itemCon}>
-                <Image style={styles.itemImage}
+                <Image style={styles.imageDetail}
                 source ={{
                     uri: item.avatar_url
                 }}

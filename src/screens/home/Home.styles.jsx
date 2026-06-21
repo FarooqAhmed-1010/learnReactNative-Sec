@@ -2,7 +2,7 @@ import { StyleSheet } from 'react-native'
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-
+        backgroundColor: 'white',
         
     },
     itemCon: {
@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
         fontSize: 20,
 
       },
-    itemImage: {
+    imageDetail: {
         width: 100,
         borderRadius: 50,
         height: 100,

@@ -1,7 +1,7 @@
 const people=[
     {
         id: 1,
-        name:'John Doe',
+        name:'John cena',
         age:30,
         city:'New York',
         image:"https://media.istockphoto.com/id/1198512535/vector/lighthouse-wonderful-ocean-landscape-flat-vector-illustration.jpg?s=2048x2048&w=is&k=20&c=QxhQtvPO-3ZZ_LJ-u7JA488jjHbHXeGrJrVNdKlVe0E="
