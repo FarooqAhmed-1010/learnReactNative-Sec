@@ -12,6 +12,7 @@ export const styles = StyleSheet.create({
     color: '#fff',
     fontSize: 32,
     marginBottom: 20,
+    textAlign: 'center',
   },
 
   input: {
