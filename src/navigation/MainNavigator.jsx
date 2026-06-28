@@ -8,15 +8,20 @@ import Learn from "../screens/learn/Learn"
 import Counter from "../screens/counter/Counter"
 
 const RootStack = createNativeStackNavigator({
+  screenOptions: {
+    headerShown: false,
+  },
   screens: {
-    Login:Login,
+  
+    Login:{
+      screen: Login,
+    },
 
     Counter: Counter,
+
+
     Learn: {
       screen: Learn,
-      options: {
-        headerShown: false,
-      },
     },
 
     Home: Home,

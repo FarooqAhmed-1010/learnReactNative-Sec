@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#1a1f36',
-    padding: 20,
+    alignItems: 'center',
     justifyContent: 'center',
   },
 
@@ -20,23 +20,22 @@ export const styles = StyleSheet.create({
     borderRadius: 100,
   },
 
-  title: {
+  label: {
     color: '#fff',
-    fontSize: 32,
-    marginBottom: 20,
-    textAlign: 'center',
+    fontSize: 40,
+  },
+
+  form:{
+    width: '90%',
   },
 
   input: {
     borderWidth: 1,
     borderColor: '#00d4ff',
     color: '#fff',
-    padding: 15,
-    marginBottom: 15,
+    fontSize:20,
+    margin:10,
+    borderRadius: 10,
   },
-    Button: {
-    backgroundColor: 'rgb(49, 239, 214)',
-    marginTop: 20,
-    
-  }, 
+
 });
