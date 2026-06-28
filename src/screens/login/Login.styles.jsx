@@ -13,6 +13,13 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 
+  logo:{
+    width: 150, 
+    height: 150,
+    alignSelf: 'center' ,
+    borderRadius: 100,
+  },
+
   title: {
     color: '#fff',
     fontSize: 32,
