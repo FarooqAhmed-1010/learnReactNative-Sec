@@ -8,16 +8,17 @@ import Learn from "../screens/learn/Learn"
 import Counter from "../screens/counter/Counter"
 
 const RootStack = createNativeStackNavigator({
+  initialRouteName: 'Login',
   screenOptions: {
     headerShown: false,
   },
   screens: {
-  
+    Counter: Counter,
     Login:{
       screen: Login,
     },
 
-    Counter: Counter,
+
 
 
     Learn: {

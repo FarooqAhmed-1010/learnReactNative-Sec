@@ -1,31 +1,14 @@
-import { View, Text,FlatList,Image } from 'react-native'
+import { View, Text } from 'react-native'
 import React from 'react'
 import styles from './Home.styles'
-import people from "./data"
+import { useRoute } from '@react-navigation/native';
 
     export default function Home() {
-        const [onlineData, setOnlineData] = React.useState([]);
-        fetch("https://api.github.com/users")
-        .then((res)=>res.json())
-        .then((data)=>setOnlineData(data))
-        .catch((err)=>console.log(err))
-        const _renderItem = ({ item }) => (
-            <View style={styles.itemCon}>
-                <Image style={styles.imageDetail}
-                source ={{
-                    uri: item.avatar_url
-                }}
-                />
-                <Text style={styles.item}>{item.login}</Text>
-    
-            </View>
-        );
+        const route = useRoute();
+        const email = route.params?.email;
     return (
         <View style={styles.container}>
-            <FlatList
-                data={onlineData}
-                renderItem={_renderItem}
-            />
+            <Text>Welcome, {email}! </Text>
         </View>
     )
 

@@ -26,7 +26,7 @@ export const Button = ({
         return (
             <View>
             <TouchableOpacity style={styles.button} onPress={onPress}>
-                <Ionicons name={icon} color={iconColor} size={iconSize} type={iconFamily} />
+                <Ionicons name={icon} color={iconColor} size={iconSize}  />
                 <Text style={styles.buttonText}>{title}</Text>
             </TouchableOpacity>
             </View>
@@ -39,11 +39,10 @@ const styles = StyleSheet.create({
     button: {
     backgroundColor: 'rgb(49, 239, 214)',
     marginTop: 20,
-    padding: 15,
+    padding: 10,
     borderRadius: 10,
-    width: '50%',
-    height: '30%',
     alignItems: 'center',
+    flexDirection: 'row',
   }, 
 
   buttonText: {

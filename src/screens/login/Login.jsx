@@ -2,12 +2,14 @@ import { View, Image, Text, TextInput,ScrollView} from 'react-native';
 import { styles } from './Login.styles';
 import { useState } from "react"
 import { Button } from '../../components';
+import { useNavigation } from '@react-navigation/native';
 
 export default function Login() {
 
   const [email,setEmail] = useState("");
   const [password,setPassword] = useState("");
   const [isValid, setIsValid] = useState(false);
+  const navigation = useNavigation();
   function onLoginPressed() {
     const error=
       (!email && "please enter email") ||
@@ -15,7 +17,7 @@ export default function Login() {
       (!email.includes("@") && "please enter valid email");
     if(error) return alert(error);
     setIsValid(true);
-    alert("Login pressed");
+    navigation.navigate("Home",{email});
   }
 
   return (
