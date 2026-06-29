@@ -1,3 +1,4 @@
+import "react-native-reanimated";
 import MaiNavigation from './src/navigation/MainNavigator';
 
 export default function App() {
